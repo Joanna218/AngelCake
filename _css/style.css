@@ -182,7 +182,7 @@
 }
 
 .build_wrapp .row .build {
-    width: 200px;
+    /*width: 200px;*/
     width: calc(100% / 3 - 2%);
 }
 
@@ -214,7 +214,10 @@
     left: 50%;
     transform: translateX(-50%);
 }
+
+
 /*before是大圓和小圓的橋樑*/
+
 .build_wrapp .row .build .build_top .build_circle:before {
     width: 10px;
     height: 20px;
@@ -226,7 +229,10 @@
     background-color: #D7D7D7;
     content: "";
 }
+
+
 /*after是小圓*/
+
 .build_wrapp .row .build .build_top .build_circle:after {
     width: 20px;
     height: 20px;
@@ -263,57 +269,235 @@
 /*................................................................................................*/
 
 .cooperative_wrapp {
-  background-color: #f7f7f7;
-  width: 100%;
-  height: 800px;
-}
-.cooperative_wrapp .cooperative_intor {
-  text-align: center;
-  line-height: 60px;
-}
-.cooperative_wrapp .row {
-  display: flex;
-  justify-content: space-around;
-}
-.cooperative_wrapp .row .coo_company {
-  width: calc(100% / 4 - 8%);
-  height: 220px;
-  text-align: center;
-}
-.cooperative_wrapp .row .coo_company .coo_icon {
-  width: 120px;
-  height: 120px;
-  position: absolute;
-  top: 10%;
-  left: 50%;
-  transform: translateX(-50%);
-  border-radius: 5px;
-  background-color: #131E2B;
-  transition-duration: 0.3s;
-}
-.cooperative_wrapp .row .coo_company .coo_icon:hover {
-  background-color: #003C68;
-}
-.cooperative_wrapp .row .coo_company .coo_icon:hover:before {
-  border-color: #003C68 transparent transparent transparent;
-  opacity: 1;
-}
-.cooperative_wrapp .row .coo_company .coo_icon:before {
-  border-color: #131E2B transparent transparent transparent;
-  border-style: solid solid solid solid;
-  border-width: 30px;
-  width: 0px;
-  height: 0px;
-  display: block;
-  position: absolute;
-  top: 100%;
-  right: 30%;
-  transition-duration: 0.3s;
-  opacity: 0;
-  content: "";
-}
-.cooperative_wrapp .row .coo_company .coo_name {
-  top: 85%;
-  letter-spacing: 2px;
+    background-color: #f7f7f7;
+    width: 100%;
+    /*height: 800px;*/
 }
 
+.cooperative_wrapp .cooperative_intor {
+    text-align: center;
+    line-height: 60px;
+}
+
+.cooperative_wrapp .row {
+    display: flex;
+    justify-content: space-around;
+}
+
+.cooperative_wrapp .row .coo_company {
+    width: calc(100% / 4 - 8%);
+    height: 220px;
+    text-align: center;
+}
+
+.cooperative_wrapp .row .coo_company .coo_icon1 {
+    background-image: url("../image/coo_icon1.png");
+    background-size: contain;
+}
+
+.cooperative_wrapp .row .coo_company .coo_icon2 {
+    background-image: url("../image/coo_icon2.png");
+    background-size: contain;
+}
+
+.cooperative_wrapp .row .coo_company .coo_icon3 {
+    background-image: url("../image/coo_icon3.png");
+    background-size: contain;
+}
+
+.cooperative_wrapp .row .coo_company .coo_icon {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+    background-color: #131E2B;
+    transition-duration: 0.3s;
+}
+
+.cooperative_wrapp .row .coo_company .coo_icon:hover {
+    background-color: #003C68;
+}
+
+.cooperative_wrapp .row .coo_company .coo_icon:hover:before {
+    border-color: #003C68 transparent transparent transparent;
+    opacity: 1;
+}
+
+.cooperative_wrapp .row .coo_company .coo_icon:before {
+    border-color: #131E2B transparent transparent transparent;
+    border-style: solid solid solid solid;
+    border-width: 30px;
+    width: 0px;
+    height: 0px;
+    display: block;
+    position: absolute;
+    top: 100%;
+    right: 30%;
+    transition-duration: 0.3s;
+    opacity: 0;
+    content: "";
+}
+
+.cooperative_wrapp .row .coo_company .coo_name {
+    top: 85%;
+    letter-spacing: 2px;
+}
+
+
+/*................................................................................................*/
+
+.foundation_wrapp {
+    background-color: #fff;
+    /*height: 550px;*/
+}
+
+
+/*.foundation_wrapp .foundation_name*/
+
+.foundation_name {
+    text-align: center;
+    line-height: 60px;
+}
+
+.foundation_wrapp .row {
+    display: flex;
+    justify-content: space-around;
+    height: 650px;
+}
+
+.foundation_wrapp .row .foundation_img {
+    width: 30%;
+    height: 370px;
+    margin-top: 5%;
+    background-image: url("https://lecoin.cc/Medias/Groups/Logo/2ab231a47b6b48a68693cb574380c790.jpg");
+    background-size: cover;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.foundation_wrapp .row .foundation_img:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+
+/*.foundation_wrapp .row .cooperative_foundation_intor {*/
+
+.cooperative_foundation_intor {
+    width: 40%;
+    /*height: 300px;*/
+    margin-top: 5%;
+    text-align: center;
+}
+
+
+/*.foundation_wrapp .row .foundation_intor .cooperative_text_intor {*/
+
+.cooperative_text_intor {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: justify;
+    line-height: 22px;
+}
+
+
+/*................................................................................................*/
+
+.angelcake_wrapp {
+    background-color: #f7f7f7;
+}
+
+.angelcake_wrapp .angelcake_name {
+    text-align: center;
+    line-height: 60px;
+}
+
+.angelcake_wrapp .row {
+    display: flex;
+    justify-content: space-around;
+    height: 600px;
+}
+
+.angelcake_wrapp .row .cooperative_angelcake_intor {
+    width: 40%;
+    margin-top: 5%;
+    text-align: center;
+}
+
+.angelcake_wrapp .row .cooperative_angelcake_intor .cooperative__text_intor {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: justify;
+    line-height: 22px;
+}
+
+.angelcake_wrapp .row .angelcake_img {
+    width: 35%;
+    height: 370px;
+    margin-top: 5%;
+    background-image: url("https://images.dappei.com/uploads/tag/image/11857/large_a6a0ac0c8d08420c.jpg");
+    background-size: cover;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 400px;
+}
+
+.angelcake_wrapp .row .angelcake_img:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+
+/*................................................................................................*/
+
+#cyim {
+    width: 100%;
+    margin: 0 auto;
+    text-align: justify;
+    background-color: #fff;
+}
+
+li {
+    list-style-type: none;
+}
+
+#cyim .row {
+    display: flex;
+    justify-content: space-around;
+    height: 550px;
+}
+
+
+/*.Chead {
+    text-align: center;
+    line-height: 60px;
+}*/
+
+.Cleft {
+    width: 380px;
+    margin-top: 5%;
+}
+
+.Cright {
+    margin-top: 5%;
+}
+
+.Cright ul {
+    width: 400px;
+}
+
+.Cleft img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 380px;
+}
+
+.Cleft img:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+
+/*................................................................................................*/
