@@ -7,11 +7,15 @@
 	<link href="_css/style.css" rel="stylesheet">
 	<link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="main.js"></script>
 </head>
 
 <body>
 	<!--最外層用來包覆整個網頁-->
-	<div id="wrapp">
+	<div id="wrapp"><script type="text/javascript" src="https://counter8.fcs.ovh/private/counter.js?c=la4hgrxzxqjlyn96jrmw9nxq6jwz2m5x"></script>
+<noscript><a href="https://www.freecounterstat.com" title="web counter"><img src="https://counter8.fcs.ovh/private/freecounterstat.php?c=la4hgrxzxqjlyn96jrmw9nxq6jwz2m5x" border="0" title="web counter" alt="web counter"></a></noscript>
+
 		<!--最上面slide_img之上都是，又分為top、middle、nav-->
 		<div class="header">
 			<div class="header_top"></div>
@@ -38,12 +42,12 @@
 				</svg>
 			</div>
 			<div class="header_nav">
-				<ul>
-					<li class="active"><a href="#">Six To Dream</a></li>
-					<li> <a href="#">Cooperative</a></li>
-					<li> <a href="#">Product</a></li>
-					<li> <a href="#">Volunteer</a></li>
-					<li> <a href="#">Contact Us</a></li>
+				<ul class="menu">
+					<li class="active"><div class="menu-item"><a href="#" id="six_to_dream">Six To Dream</a></div></li>
+					<li> <div class="menu-item"><a href="#" id="cooperative">Cooperative</a></div></li>
+					<li> <div class="menu-item"><a href="#">Product</a></div></li>
+					<li> <div class="menu-item"><a href="#">Volunteer</a></div></li>
+					<li> <div class="menu-item"><a href="#">Contact Us</a></div></li>
 				</ul>
 			</div>
 		</div>
@@ -177,11 +181,11 @@
 			<h2 class="cooperative_intor">Cooperative</h2>
 			<div class="row">
 				<div class="coo_company">
-					<div class="coo_icon coo_icon1"></div>
+					<div class="coo_icon coo_icon1" onclick="window.location='index.html#coo_1_pos'"></div>
 					<h4 class="coo_name">普仁基金會</h4>
 				</div>
 				<div class="coo_company">
-					<div class="coo_icon coo_icon2"></div>
+					<div class="coo_icon coo_icon2" onclick="window.location='index.html#coo_2_pos'"></div>
 					<h4 class="coo_name">微熱山丘天使蛋糕</h4>
 				</div>
 				<div class="coo_company">
@@ -198,6 +202,7 @@
 
 		<!--從普仁基金會這部分開始-->
 		<div class="foundation_wrapp">
+			<div id="coo_1_pos"></div>
 			<h2 class="foundation_name">普仁基金會</h2>
 			<div class="row">
 				<div class="foundation_img"></div>
@@ -214,6 +219,7 @@
 
 		<!--angelcake_wrapp-->
 		<div class="angelcake_wrapp">
+			<div id="coo_2_pos"></div>
 			<h2 class="angelcake_name">微熱山丘天使蛋糕</h2>
 			<div class="row">
 				<div class="cooperative_angelcake_intor">
