@@ -2,21 +2,23 @@
     box-sizing: border-box;
     box-sizing: border-box;
     box-sizing: border-box;
-    border: 1px solid;
+    /*border: 1px solid;*/
     margin: 0;
     padding: 0;
     position: relative;
-    font-family: "opensansregular", Arial, Helvetica, sans-serif;
+    font-family: 'Raleway', sans-serif, "微軟正黑體";
+    /*font-family: "opensansregular", Arial, Helvetica, sans-serif,"微軟正黑體";*/
 }
 
 .header {
     width: 100%;
+    background-color: white;
 }
 
 .header .header_top {
     height: 50px;
-    background-color: #262d35;
-    box-shadow: 0 2px rgba(51, 51, 51, 0.4);
+    background-color: #FFB400;
+    box-shadow: 0 2px #F49F0C;
 }
 
 .header .header_middle {
@@ -33,6 +35,7 @@
 .header .header_middle .logo_name {
     top: 70%;
     text-align: center;
+    color: black;
 }
 
 .header .header_nav {
@@ -59,11 +62,12 @@
     border: solid;
     border-width: 1px 0 0 0;
     transition-duration: 0.2s;
+    letter-spacing: 2px;
 }
 
 .header .header_nav ul li:hover a {
-    color: #63CAC6;
-    border-color: #63CAC6;
+    color: #FF810C;
+    border-color: #FF810C;
 }
 
 
@@ -84,15 +88,41 @@
 }
 
 .home .infos {
-    width: 800px;
+    /*width: 800px;*/
     display: flex;
     justify-content: space-around;
 }
 
 .home .infos .intro {
     width: calc(100% / 3 - 2%);
-    height: 250px;
+    height: 300px;
     text-align: center;
+}
+
+.home .infos .intro .home_img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-top: 10% ;
+    margin-bottom: 10%;
+}
+
+.home .infos .intro .img1 {
+    background-image: url("../image/svg/school.svg");
+}
+
+.home .infos .intro .img2 {
+    background-image: url("../image/svg/pregnant.svg");
+}
+
+.home .infos .intro .img3 {
+    background-image: url("../image/svg/school.svg");
+}
+
+.infos_text_intro {
+    margin-top: 5% ;
+    text-align: justify ;
 }
 
 
@@ -143,7 +173,7 @@
 }
 
 .member_wrapp .row .member .pic4 {
-    background-image: url(https://scontent.xx.fbcdn.net/v/t1.0-1/20582_798968660190062_2180965599899347138_n.jpg?oh=85438e2bf432e4ffbe62844c0f36337a&oe=59BBF209);
+    background-image: url("../image/headpic4.jpg");
 }
 
 .member_wrapp .row .member .pic5 {
@@ -182,8 +212,7 @@
 }
 
 .build_wrapp .row .build {
-    /*width: 200px;*/
-    width: calc(100% / 3 - 2%);
+    width: calc(100% / 3 - 5%);
 }
 
 .build_wrapp .row .build:hover .fa {
@@ -211,6 +240,7 @@
     border-color: #003C68;
     border: 8px solid;
     position: absolute;
+    top: 10% ;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -259,6 +289,7 @@
 .build_wrapp .row .build .build_middle {
     height: 30px;
     text-align: center;
+    margin-bottom: 5% ;
 }
 
 .build_wrapp .row .build .build_bottom {
@@ -271,7 +302,6 @@
 .cooperative_wrapp {
     background-color: #f7f7f7;
     width: 100%;
-    /*height: 800px;*/
 }
 
 .cooperative_wrapp .cooperative_intor {
@@ -301,7 +331,12 @@
 }
 
 .cooperative_wrapp .row .coo_company .coo_icon3 {
-    background-image: url("../image/coo_icon3.png");
+    background-image: url("../image/icon3.png");
+    background-size: contain;
+}
+
+.cooperative_wrapp .row .coo_company .coo_icon4 {
+    background-image: url("../image/coo_icon4.png");
     background-size: contain;
 }
 
@@ -313,25 +348,44 @@
     left: 50%;
     transform: translateX(-50%);
     border-radius: 5px;
-    background-color: #131E2B;
     transition-duration: 0.3s;
 }
 
-.cooperative_wrapp .row .coo_company .coo_icon:hover {
+
+/*.cooperative_wrapp .row .coo_company .coo_icon:hover {
     background-color: #003C68;
+    cursor: pointer ;
+}*/
+
+.cooperative_wrapp .row .coo_company .coo_icon1:hover {
+    background-color: #EF4A4A;
+    cursor: pointer;
 }
 
-.cooperative_wrapp .row .coo_company .coo_icon:hover:before {
-    border-color: #003C68 transparent transparent transparent;
-    opacity: 1;
+.cooperative_wrapp .row .coo_company .coo_icon2:hover {
+    background-color: #F2921D;
+    cursor: pointer;
 }
+
+.cooperative_wrapp .row .coo_company .coo_icon3:hover {
+    background-color: #95D870;
+    cursor: pointer;
+}
+
+.cooperative_wrapp .row .coo_company .coo_icon4:hover {
+    background-color: #FFDE28;
+    cursor: pointer;
+}
+
+
+/*before為倒三角形*/
 
 .cooperative_wrapp .row .coo_company .coo_icon:before {
-    border-color: #131E2B transparent transparent transparent;
+    border-color: #f7f7f7 transparent transparent transparent;
     border-style: solid solid solid solid;
     border-width: 30px;
-    width: 0px;
-    height: 0px;
+    /*width: 0px;
+    height: 0px;*/
     display: block;
     position: absolute;
     top: 100%;
@@ -339,6 +393,26 @@
     transition-duration: 0.3s;
     opacity: 0;
     content: "";
+}
+
+.cooperative_wrapp .row .coo_company .coo_icon1:hover:before {
+    border-color: #EF4A4A transparent transparent transparent;
+    opacity: 1;
+}
+
+.cooperative_wrapp .row .coo_company .coo_icon2:hover:before {
+    border-color: #F2921D transparent transparent transparent;
+    opacity: 1;
+}
+
+.cooperative_wrapp .row .coo_company .coo_icon3:hover:before {
+    border-color: #95D870 transparent transparent transparent;
+    opacity: 1;
+}
+
+.cooperative_wrapp .row .coo_company .coo_icon4:hover:before {
+    border-color: #FFDE28 transparent transparent transparent;
+    opacity: 1;
 }
 
 .cooperative_wrapp .row .coo_company .coo_name {
@@ -360,6 +434,7 @@
 .foundation_name {
     text-align: center;
     line-height: 60px;
+    color: #EF4A4A;
 }
 
 .foundation_wrapp .row {
@@ -376,10 +451,6 @@
     background-size: cover;
     border: 1px solid #ddd;
     border-radius: 4px;
-}
-
-.foundation_wrapp .row .foundation_img:hover {
-    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
 }
 
 
@@ -400,6 +471,7 @@
     margin-bottom: 20px;
     text-align: justify;
     line-height: 22px;
+    color: #0F0F0F;
 }
 
 
@@ -412,6 +484,7 @@
 .angelcake_wrapp .angelcake_name {
     text-align: center;
     line-height: 60px;
+    color: #F2921D;
 }
 
 .angelcake_wrapp .row {
@@ -445,10 +518,6 @@
     width: 400px;
 }
 
-.angelcake_wrapp .row .angelcake_img:hover {
-    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
-}
-
 
 /*................................................................................................*/
 
@@ -457,6 +526,11 @@
     margin: 0 auto;
     text-align: justify;
     background-color: #fff;
+}
+.cycu_name {
+    color: #95D870;
+    text-align: center;
+    line-height: 60px;
 }
 
 li {
@@ -489,14 +563,9 @@ li {
 }
 
 .Cleft img {
-    border: 1px solid #ddd;
     border-radius: 4px;
     padding: 5px;
     width: 380px;
-}
-
-.Cleft img:hover {
-    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
 }
 
 
