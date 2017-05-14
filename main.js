@@ -15,8 +15,10 @@ $(document).ready(function () {
     }
     if (pos >= cooperative_pos - 50 && pos < 2200) {
       $('#cooperative').addClass('focus');
+      $('.item1').addClass('item_border');
     } else {
       $('#cooperative').removeClass('focus');
+      $('.item1').removeClass('item_border');
     }
   });
 
