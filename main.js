@@ -1,15 +1,15 @@
 $(document).ready(function () {
   var fixed = false;
   var six_to_dream_pos = 0;
-  var cooperative_pos = $('.cooperative_wrapp').offset().top;
+  var cooperative_pos = $('.product_wrapp').offset().top;
 
   $(window).scroll(function () {
     var pos = $(window).scrollTop();
-    if (!fixed && pos > 275) {
+    if (!fixed && pos > 800) {
       $('.menu').addClass('fixed');
       fixed = true;
     }
-    if (fixed && pos < 275) {
+    if (fixed && pos <800) {
       $('.menu').removeClass('fixed');
       fixed = false;
     }
@@ -26,7 +26,7 @@ $(document).ready(function () {
     $('html, body').animate({ scrollTop: six_to_dream_pos }, 500);
   });
   $('#cooperative').on('click', function () {
-    $('html, body').animate({ scrollTop: cooperative_pos - 50 }, 500);
+    $('html, body').animate({ scrollTop: cooperative_pos - 50 }, 200);
   });
 });
 

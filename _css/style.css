@@ -33,7 +33,7 @@
 }
 
 .header .header_middle .logo_name {
-    top: 70%;
+    top: 65%;
     text-align: center;
     color: black;
 }
@@ -41,13 +41,8 @@
 .header .header_nav {
     height: 50px;
     text-align: center;
+    margin: 20px 0 20px 0;
 }
-
-
-/*.header .header_nav ul li.active a {
-  color: #63CAC6;
-  border-color: #63CAC6;
-}*/
 
 .menu {
     width: 100%;
@@ -73,7 +68,9 @@
 }
 
 #coo_1_pos,
-#coo_2_pos {
+#coo_2_pos,
+#coo_3_pos,
+#coo_4_pos {
     position: absolute;
     margin: auto;
     height: 50px;
@@ -117,12 +114,17 @@
 }
 
 .home .slide_img {
-    height: 300px;
+    height: 500px;
+    background-image: url("../image/IMG_3083.JPG");
+    background-size: cover;
 }
 
 .home h2.gold {
     text-align: center;
     line-height: 80px;
+    font-size: 40px;
+    letter-spacing: 10px;
+    margin: 20px 0 20px 0;
 }
 
 .home .infos {
@@ -166,6 +168,45 @@
 
 /*................................................................................................*/
 
+#origin_wrapp {
+    width: 100%;
+    /*height: 400px;*/
+}
+
+.origin_name {
+    text-align: center;
+    line-height: 60px;
+    font-size: 40px;
+    margin: 20px 0 20px 0;
+}
+
+.origin_img {
+    width: 100%;
+    height: 600px;
+    background-image: url("../image/天.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.origin_img_text {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.origin_img_text_p {
+    line-height: 60px;
+    color: #5B5B5B;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+
+/*................................................................................................*/
+
 .member_wrapp {
     width: 800px;
     margin: 0 auto;
@@ -199,27 +240,27 @@
 }
 
 .member_wrapp .row .member .pic1 {
-    background-image: url("https://scontent.xx.fbcdn.net/v/t31.0-8/s960x960/17191916_1506389036052592_3518055291995883964_o.jpg?oh=37809ea3d725942bf81381c50601b9ed&oe=59769DD1");
+    background-image: url("https://scontent.xx.fbcdn.net/v/t1.0-9/17883818_1200503613382243_4427122812219273369_n.jpg?oh=dc0ba7bc16fa56419be903946a8a3f9c&oe=5980A680");
 }
 
 .member_wrapp .row .member .pic2 {
-    background-image: url(https://scontent.xx.fbcdn.net/v/t1.0-9/17883818_1200503613382243_4427122812219273369_n.jpg?oh=dc0ba7bc16fa56419be903946a8a3f9c&oe=5980A680);
+    background-image: url("https://scontent.xx.fbcdn.net/v/t31.0-8/s960x960/17191916_1506389036052592_3518055291995883964_o.jpg?oh=37809ea3d725942bf81381c50601b9ed&oe=59769DD1");
 }
 
 .member_wrapp .row .member .pic3 {
-    background-image: url(https://scontent.xx.fbcdn.net/v/t1.0-9/1010390_599779870102071_2000544591_n.jpg?oh=6364605eb5338f229a3892790c71ce18&oe=59841DEB);
+    background-image: url("https://scontent.xx.fbcdn.net/v/t1.0-9/1010390_599779870102071_2000544591_n.jpg?oh=6364605eb5338f229a3892790c71ce18&oe=59841DEB");
 }
 
 .member_wrapp .row .member .pic4 {
-    background-image: url("../image/headpic4.jpg");
+    background-image: url("https://scontent.xx.fbcdn.net/v/t1.0-9/13895476_934325340006686_3500089267917458431_n.jpg?oh=e74d6449e7c00309e773fbd31054245c&oe=598D454C");
 }
 
 .member_wrapp .row .member .pic5 {
-    background-image: url(https://scontent.xx.fbcdn.net/v/t1.0-9/13895476_934325340006686_3500089267917458431_n.jpg?oh=e74d6449e7c00309e773fbd31054245c&oe=598D454C);
+    background-image: url("../image/headpic4.jpg");
 }
 
 .member_wrapp .row .member .pic6 {
-    background-image: url(https://scontent.xx.fbcdn.net/v/t1.0-9/3481_1038306592859439_3576680548940854691_n.jpg?oh=835fd9a50d2411065fd753e50fded4b7&oe=59BCCEA4);
+    background-image: url("https://scontent.xx.fbcdn.net/v/t1.0-9/3481_1038306592859439_3576680548940854691_n.jpg?oh=835fd9a50d2411065fd753e50fded4b7&oe=59BCCEA4");
 }
 
 .member_wrapp .row .member_infos {
@@ -235,36 +276,49 @@
 /*................................................................................................*/
 
 .build_wrapp {
-    width: 800px;
+    width: 100%;
     margin: 0 auto;
 }
 
-.build_wrapp .build_intor {
+.build_wrapp .build_name {
     text-align: center;
     line-height: 60px;
+    font-size: 40px;
 }
 
 .build_wrapp .row {
     display: flex;
     justify-content: space-around;
+    margin: 20px 0 20px 0;
 }
 
 .build_wrapp .row .build {
-    width: calc(100% / 3 - 5%);
+    width: calc(100% / 3 - 10%);
 }
 
 .build_wrapp .row .build:hover .fa {
-    color: #003C68;
-    border-color: #003C68;
-    border-top-color: #003c68;
-    border-right-color: #003c68;
-    border-bottom-color: #003c68;
-    border-left-color: #003c68;
+    color: #FCCF4D;
+    border-color: #FCCF4D;
     transform: rotate(360deg);
 }
 
+.fa-handshake-o {
+    top: 10px;
+    left: 3px;
+}
+
+.fa-heart-o {
+    top: 5px;
+    left: 1px;
+}
+
+.fa-smile-o {
+    top: 3px;
+    left: 6px;
+}
+
 .build_wrapp .row .build:hover .build_top .build_circle:after {
-    background-color: #003C68;
+    background-color: #FCCF4D;
 }
 
 .build_wrapp .row .build .build_top {
@@ -275,8 +329,7 @@
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    border-color: #003C68;
-    border: 8px solid;
+    border: 8px solid #FFB200;
     position: absolute;
     top: 10%;
     left: 50%;
@@ -331,7 +384,12 @@
 }
 
 .build_wrapp .row .build .build_bottom {
-    height: 100px;
+    /*background-color: pink;*/
+}
+
+.build_wrapp .row .build .build_bottom .build_bottom_p {
+    text-align: center;
+    line-height: 30px;
 }
 
 
@@ -342,9 +400,10 @@
     width: 100%;
 }
 
-.cooperative_wrapp .cooperative_intor {
+.cooperative_wrapp .cooperative_name {
     text-align: center;
     line-height: 60px;
+    font-size: 30px;
 }
 
 .cooperative_wrapp .row {
@@ -454,7 +513,7 @@
 }
 
 .cooperative_wrapp .row .coo_company .coo_name {
-    top: 85%;
+    top: 75%;
     letter-spacing: 2px;
 }
 
@@ -487,7 +546,6 @@
     margin-top: 5%;
     background-image: url("https://lecoin.cc/Medias/Groups/Logo/2ab231a47b6b48a68693cb574380c790.jpg");
     background-size: cover;
-    border: 1px solid #ddd;
     border-radius: 4px;
 }
 
@@ -548,9 +606,10 @@
     width: 35%;
     height: 370px;
     margin-top: 5%;
-    background-image: url("https://images.dappei.com/uploads/tag/image/11857/large_a6a0ac0c8d08420c.jpg");
-    background-size: cover;
-    border: 1px solid #ddd;
+    background-image: url("../image/IMG_5822.JPG");
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
     border-radius: 4px;
     padding: 5px;
     width: 400px;
@@ -610,21 +669,26 @@ li {
 
 /*................................................................................................*/
 
+.product_wrapp {
+    min-width: 800px;
+}
+
 .product_wrapp .product_name {
     text-align: center;
     line-height: 60px;
+    font-size: 40px;
 }
 
 .product_wrapp .row {
     display: flex;
     justify-content: space-around;
-    height: 800px;
+    /*height: 800px;*/
 }
 
 .product_wrapp .row .product_infos {
     height: 500px;
-    margin-top: 15%;
     width: calc(100% / 3 - 1%);
+    min-width: 380px;
     display: flex;
     flex-direction: column;
 }
@@ -640,8 +704,7 @@ li {
     margin-top: 5%;
 }
 
-.product_wrapp .row .product_infos .product_detail .product_detailL_infos .product_detailL_top,
-.product_wrapp .row .product_infos .product_detail .product_detailL_infos .product_detailL_bottom {
+.product_wrapp .row .product_infos .product_detail .product_detailL_infos .product_detailL_top {
     text-align: right;
 }
 
@@ -658,11 +721,12 @@ li {
 }
 
 .product_wrapp .row .product_infos .product_detail .product_detailR_img {
-    width: 25%;
+    /*width: 25%;*/
     height: 100px;
     display: inline-block;
     position: absolute;
     top: 15%;
+    width: 85px;
 }
 
 .product_wrapp .row .product_infos .product_detail .product_detailR_infos {
@@ -681,39 +745,283 @@ li {
     margin-bottom: 10px;
 }
 
-.product_wrapp .row .product_img {
-    height: 600px;
-    top: -15%;
-    background-size: conver;
-}
-
-.product_wrapp .row .product_img .product_img_top {
-    width: 90%;
-    height: 25%;
-    background-repeat: no-repeat;
+.product_img_top {
+    width: 500px;
+    height: 100px;
     margin: 0 auto;
-    margin-bottom: 20px;
-    background-image: url("../image/svg/product_img-02.svg");
-    background-size: contain;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-image: url("../image/svg/angelcake.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.product_wrapp .row .product_img .product_img_bottom {
+.product_img_bottom {
     width: 100%;
     height: 460px;
-    background-image: url("http://i.imgur.com/RaPaYPm.jpg");
+    background-image: url("../image/IMG_57052.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
 .product_wrapp .product_detail_img_circle {
-    width: 80%;
+    /*width: 80%;*/
     height: 80%;
     border-radius: 100%;
-    background-color: orange;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 85px
 }
 
 .product_wrapp .L_pos_circle {
     position: absolute;
     right: 0;
+    width: 85px
+}
+
+.circle_pic1 {
+    background-image: url("../image/svg/pineapple.svg");
+}
+
+.circle_pic2 {
+    background-image: url("../image/svg/sprout.svg");
+}
+
+.circle_pic3 {
+    background-image: url("../image/svg/like.svg");
+    background-size: contain;
+}
+
+.circle_pic4 {
+    background-image: url("../image/svg/star.svg");
+}
+
+.circle_pic5 {
+    background-image: url("../image/svg/store.svg");
+    background-size: contain;
+}
+
+.circle_pic6 {
+    background-image: url("../image/svg/hearts.svg");
+    background-size: contain;
+}
+
+.product_detailL_bottom {
+    width: 72%;
+    float: right;
+    text-align: right;
+}
+
+.product_detailR_bottom {
+    width: 72%;
+    float: left;
+    text-align: left;
 }
 
 
 /*................................................................................................*/
+
+.online_wrapp {
+    height: 600px;
+}
+
+.online_wrapp .online_name {
+    text-align: center;
+    line-height: 60px;
+}
+
+.cake_title1 {
+    margin-top: 10px;
+}
+
+.cake_text {
+    width: 300px;
+    margin-top: 20px;
+    margin-left: 20px;
+    line-height: 25px;
+    letter-spacing: 3px;
+}
+
+
+/*................................................................................................*/
+
+#abgneBlock {
+    width: 1600px;
+    height: 900px;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    margin: 0 auto;
+}
+
+#abgneBlock ul.list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: absolute;
+    width: 9999px;
+    height: 100%;
+}
+
+#abgneBlock ul.list li {
+    float: left;
+    width: 1600px;
+    height: 100%;
+}
+
+#abgneBlock .list img {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+#abgneBlock ul.playerControl {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    height: 14px;
+}
+
+#abgneBlock ul.playerControl li {
+    float: left;
+    width: 23px;
+    height: 14px;
+    cursor: pointer;
+    margin: 0px 2px;
+    background: url(http://demonstration.abgne.tw/jquery/0033/images/rect_ctrl.png) no-repeat 0 0;
+}
+
+#abgneBlock ul.playerControl li.current {
+    background-position: -23px 0;
+}
+
+
+/*................................................................................................*/
+
+#img_wrapp {
+    background-image: url("../image/wu0 g3.png");
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+#wrap { display:table; width: inherit; height: 100%; }
+#cell { display:table-cell; vertical-align:middle; width: inherit; height: inherit; }
+.entry {
+    background: url('../image/mask.png') no-repeat center;
+    margin: auto;
+    height: 375px;
+    width: 375px;
+    border-radius: 50%;
+    opacity: .8;
+    /*width: 360px;
+    height: 360px;
+    margin: auto;
+    background: black;
+    vertical-align: middle;
+    border-radius: 50%;
+    opacity: .2;
+    top: 159px;*/
+    transition: opacity .5s ease-in-out;
+}
+.entry:hover {
+    opacity: 1;
+}
+
+.enter_1 {
+    width: 100%;
+    position: absolute;
+    top: 80%;
+    text-align: center;
+}
+
+.enter_2 a {
+    color: #000000;
+    text-decoration: none;
+    transition: color 1s;
+}
+
+.enter_2 a:hover {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.enter_2 a:active {
+    color: red;
+    text-decoration: none;
+}
+
+#contact {
+    text-align: center;
+    width: 100%;
+    background-color: #f7f7f7;
+    height: 40px;
+    -webkit-transition: height 2s;
+    /* For Safari 3.1 to 6.0 */
+    transition: height 2s;
+}
+
+#contact:hover {
+    text-align: center;
+    width: 100%;
+    height: 300px;
+}
+
+
+/*................................................................................................*/
+
+.email {
+    width: 20%;
+    height: 30px;
+}
+
+.message {
+    width: 20%;
+    height: 120px;
+}
+
+.contacthiden li {
+    line-height: 50px;
+    text-align: center;
+}
+
+ul.drop-down-menu a {
+    /*background-color: #ef5c28;*/
+    color: #333;
+    display: block;
+    padding: 0 30px;
+    text-decoration: none;
+    line-height: 40px;
+}
+
+ul.drop-down-menu a:hover {
+    /* 滑鼠滑入按鈕變色*/
+    background-color: #FFB400;
+    color: #fff;
+}
+
+.contacthiden {
+    overflow: hidden;
+    opacity: 0;
+    -webkit-transition: opacity 0.8s;
+    transition: opacity 0.8s;
+}
+
+ul.drop-down-menu li:hover>ul {
+    /* 滑鼠滑入展開次選單*/
+    display: block;
+    opacity: 1;
+    -webkit-transition: opacity 0.8s;
+    transition: opacity 0.8s;
+}
+
+.submit {
+    width: 100px;
+    height: 30px;
+}
