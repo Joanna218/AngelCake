@@ -183,7 +183,7 @@
 .origin_img {
     width: 100%;
     height: 600px;
-    background-image: url("../image/天.png");
+    background-image: url("../image/origin.png");
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -513,7 +513,7 @@
 }
 
 .cooperative_wrapp .row .coo_company .coo_name {
-    top: 75%;
+    top: 80%;
     letter-spacing: 2px;
 }
 
@@ -751,7 +751,7 @@ li {
     margin: 0 auto;
     margin-top: 10px;
     margin-bottom: 10px;
-    background-image: url("../image/svg/angelcake.svg");
+    background-image: url("../image/product_img.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -829,26 +829,39 @@ li {
 .online_wrapp .online_name {
     text-align: center;
     line-height: 60px;
-}
-
-.cake_title1 {
-    margin-top: 10px;
-}
-
-.cake_text {
-    width: 300px;
     margin-top: 20px;
-    margin-left: 20px;
-    line-height: 25px;
-    letter-spacing: 3px;
+}
+
+.btn_buy {
+    margin: 15px auto;
+    user-select: none;
+    background-color: black;
+    width: 100px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #FFF;
+    transition: all .1s ease-in-out;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn_buy:hover {
+    background-color: #F2921D;
+    box-shadow: 0 0 5px #F2921D;
+}
+
+.btn_buy:active {
+    background-color: gray;
+    box-shadow: 0 0 5px gray;
 }
 
 
 /*................................................................................................*/
 
 #abgneBlock {
-    width: 1600px;
-    height: 900px;
+    width: 1400px;
+    height: 800px;
     overflow: hidden;
     border: 1px solid #ccc;
     margin: 0 auto;
@@ -860,12 +873,13 @@ li {
     list-style: none;
     position: absolute;
     width: 9999px;
+    margin: 0 auto;
     height: 100%;
 }
 
 #abgneBlock ul.list li {
     float: left;
-    width: 1600px;
+    width: 1400px;
     height: 100%;
 }
 
@@ -901,8 +915,9 @@ li {
 
 /*................................................................................................*/
 
-#img_wrapp {
-    background-image: url("../image/wu0 g3.png");
+#img_wrapp,
+#img_mask,
+#img_mask_center {
     background-size: cover;
     background-position: center center;
     width: 100%;
@@ -910,9 +925,64 @@ li {
     position: fixed;
     top: 0;
     left: 0;
+    cursor: pointer;
 }
-#wrap { display:table; width: inherit; height: 100%; }
-#cell { display:table-cell; vertical-align:middle; width: inherit; height: inherit; }
+
+#img_wrapp {
+    background-image: url("../image/main.jpg");
+}
+
+#img_mask {
+    opacity: .5;
+    transition: opacity .5s;
+    background-image: url("../image/mask.png");
+}
+
+#img_mask.active {
+    opacity: 1;
+}
+
+#img_mask_center {
+    opacity: .3;
+    transition: opacity .5s;
+    background-image: url("../image/mask_center.png");
+}
+
+#img_mask_center.active {
+    opacity: 0;
+}
+
+#enter_container {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+}
+
+#enter {
+    width: 550px;
+    height: 550px;
+    position: absolute;
+    top: 50%;
+    margin-top: -285px;
+    left: 50%;
+    margin-left: -285px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#wrap {
+    display: table;
+    width: inherit;
+    height: 100%;
+}
+
+#cell {
+    display: table-cell;
+    vertical-align: middle;
+    width: inherit;
+    height: inherit;
+}
+
 .entry {
     background: url('../image/mask.png') no-repeat center;
     margin: auto;
@@ -930,6 +1000,7 @@ li {
     top: 159px;*/
     transition: opacity .5s ease-in-out;
 }
+
 .entry:hover {
     opacity: 1;
 }

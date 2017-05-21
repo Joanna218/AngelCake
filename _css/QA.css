@@ -1,0 +1,79 @@
+.menu2 ul, ul li{
+
+list-style-type: none;
+margin:0;
+padding: 0;
+}
+.menu2 a{
+text-decoration: none;
+line-height: 2em;
+font-size: 1.2em;
+color: #333;
+}
+
+.nav{
+overflow: auto;
+
+}
+/*第一層選單*/
+.nav>ul>li{
+width:100%;
+line-height: 3.3em;
+border-bottom: solid 1px #333;
+}
+/*第二層選單*/
+.nav>ul>li>ul>li{
+
+border-bottom: solid 1px #333;
+}.nav>ul>li>ul>li:first-child{
+border-top: solid 1px #333;
+}
+.nav>ul>li>ul>li:last-child{
+border: 0;
+}
+
+/*第三層選單*/
+.nav>ul>li>ul>li>ul>li{
+
+border-bottom: solid 1px #333;
+}
+.nav>ul>li>ul>li>ul>li:first-child{
+border-top: solid 1px #333;
+}
+.nav>ul>li>ul>li>ul>li:last-child{
+border: 0;
+}
+.menu-plus{
+display: block;
+background: #333;
+color: #fff !important;
+padding: 2px 15px;
+margin-top: 5px;
+border-radius: 30px;
+float: right;
+}
+
+@media (min-width: 768px) {
+#nav-btn,.sub-menu{
+display: none;
+}
+.main {
+display: block !important;
+cursor: 
+}
+.nav>.menu2 {
+display: block !important;
+}
+/*第一層選單*/
+.nav>ul>li{
+float: left;
+
+line-height: 3.3em;
+border-bottom: solid 1px #333;
+}
+}
+@media (max-width: 768px) {
+.nav>ul,.sub-menu{
+display: none;
+}
+}
